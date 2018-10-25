@@ -3,7 +3,7 @@
 <title>Static Call Graph - [test_sd_stm32f4\test_sd_stm32f4.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image test_sd_stm32f4\test_sd_stm32f4.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Oct 25 05:08:37 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Oct 25 07:05:53 2018
 <BR><P>
 <H3>Maximum Stack Usage =        392 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -712,7 +712,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
 </UL>
 
-<P><STRONG><a name="[90]"></a>SD_disk_initialize</STRONG> (Thumb, 304 bytes, Stack size 32 bytes, fatfs_sd.o(i.SD_disk_initialize))
+<P><STRONG><a name="[90]"></a>SD_disk_initialize</STRONG> (Thumb, 304 bytes, Stack size 32 bytes, fastfs_sd.o(i.SD_disk_initialize))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = SD_disk_initialize &rArr; SD_SendCmd &rArr; SD_ReadyWait &rArr; SPI_RxByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_RxByte
@@ -724,7 +724,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_initialize
 </UL>
 
-<P><STRONG><a name="[91]"></a>SD_disk_ioctl</STRONG> (Thumb, 318 bytes, Stack size 32 bytes, fatfs_sd.o(i.SD_disk_ioctl))
+<P><STRONG><a name="[91]"></a>SD_disk_ioctl</STRONG> (Thumb, 318 bytes, Stack size 32 bytes, fastfs_sd.o(i.SD_disk_ioctl))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = SD_disk_ioctl &rArr; SD_SendCmd &rArr; SD_ReadyWait &rArr; SPI_RxByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_RxByte
@@ -738,7 +738,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_ioctl
 </UL>
 
-<P><STRONG><a name="[92]"></a>SD_disk_read</STRONG> (Thumb, 146 bytes, Stack size 24 bytes, fatfs_sd.o(i.SD_disk_read))
+<P><STRONG><a name="[92]"></a>SD_disk_read</STRONG> (Thumb, 146 bytes, Stack size 24 bytes, fastfs_sd.o(i.SD_disk_read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = SD_disk_read &rArr; SD_SendCmd &rArr; SD_ReadyWait &rArr; SPI_RxByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_RxByte
@@ -750,11 +750,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_read
 </UL>
 
-<P><STRONG><a name="[9a]"></a>SD_disk_status</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, fatfs_sd.o(i.SD_disk_status))
+<P><STRONG><a name="[9a]"></a>SD_disk_status</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, fastfs_sd.o(i.SD_disk_status))
 <BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_status
 </UL>
 
-<P><STRONG><a name="[93]"></a>SD_disk_write</STRONG> (Thumb, 178 bytes, Stack size 24 bytes, fatfs_sd.o(i.SD_disk_write))
+<P><STRONG><a name="[93]"></a>SD_disk_write</STRONG> (Thumb, 178 bytes, Stack size 24 bytes, fastfs_sd.o(i.SD_disk_write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = SD_disk_write &rArr; SD_TxDataBlock &rArr; SD_ReadyWait &rArr; SPI_RxByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_RxByte
@@ -1387,7 +1387,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[6e]"></a>DESELECT</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, fatfs_sd.o(i.DESELECT))
+<P><STRONG><a name="[6e]"></a>DESELECT</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, fastfs_sd.o(i.DESELECT))
 <BR><BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
 <BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_PowerOn
@@ -1397,7 +1397,7 @@ Local Symbols
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_disk_initialize
 </UL>
 
-<P><STRONG><a name="[88]"></a>SD_PowerOn</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, fatfs_sd.o(i.SD_PowerOn))
+<P><STRONG><a name="[88]"></a>SD_PowerOn</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, fastfs_sd.o(i.SD_PowerOn))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = SD_PowerOn &rArr; SPI_RxByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_TxByte
@@ -1409,7 +1409,7 @@ Local Symbols
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_disk_initialize
 </UL>
 
-<P><STRONG><a name="[8c]"></a>SD_ReadyWait</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, fatfs_sd.o(i.SD_ReadyWait))
+<P><STRONG><a name="[8c]"></a>SD_ReadyWait</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, fastfs_sd.o(i.SD_ReadyWait))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = SD_ReadyWait &rArr; SPI_RxByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_RxByte
@@ -1419,7 +1419,7 @@ Local Symbols
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_disk_ioctl
 </UL>
 
-<P><STRONG><a name="[8d]"></a>SD_RxDataBlock</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, fatfs_sd.o(i.SD_RxDataBlock))
+<P><STRONG><a name="[8d]"></a>SD_RxDataBlock</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, fastfs_sd.o(i.SD_RxDataBlock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = SD_RxDataBlock &rArr; SPI_RxByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_RxByte
@@ -1428,7 +1428,7 @@ Local Symbols
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_disk_ioctl
 </UL>
 
-<P><STRONG><a name="[8e]"></a>SD_SendCmd</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, fatfs_sd.o(i.SD_SendCmd))
+<P><STRONG><a name="[8e]"></a>SD_SendCmd</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, fastfs_sd.o(i.SD_SendCmd))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = SD_SendCmd &rArr; SD_ReadyWait &rArr; SPI_RxByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_TxByte
@@ -1441,7 +1441,7 @@ Local Symbols
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_disk_initialize
 </UL>
 
-<P><STRONG><a name="[8f]"></a>SD_TxDataBlock</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, fatfs_sd.o(i.SD_TxDataBlock))
+<P><STRONG><a name="[8f]"></a>SD_TxDataBlock</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, fastfs_sd.o(i.SD_TxDataBlock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = SD_TxDataBlock &rArr; SD_ReadyWait &rArr; SPI_RxByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_TxByte
@@ -1451,7 +1451,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_disk_write
 </UL>
 
-<P><STRONG><a name="[8a]"></a>SELECT</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, fatfs_sd.o(i.SELECT))
+<P><STRONG><a name="[8a]"></a>SELECT</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, fastfs_sd.o(i.SELECT))
 <BR><BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
 <BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_PowerOn
@@ -1461,7 +1461,7 @@ Local Symbols
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_disk_initialize
 </UL>
 
-<P><STRONG><a name="[8b]"></a>SPI_RxByte</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, fatfs_sd.o(i.SPI_RxByte))
+<P><STRONG><a name="[8b]"></a>SPI_RxByte</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, fastfs_sd.o(i.SPI_RxByte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = SPI_RxByte &rArr; HAL_SPI_TransmitReceive &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
@@ -1478,7 +1478,7 @@ Local Symbols
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_disk_initialize
 </UL>
 
-<P><STRONG><a name="[89]"></a>SPI_TxByte</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, fatfs_sd.o(i.SPI_TxByte))
+<P><STRONG><a name="[89]"></a>SPI_TxByte</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, fastfs_sd.o(i.SPI_TxByte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = SPI_TxByte &rArr; HAL_SPI_Transmit &rArr; SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit

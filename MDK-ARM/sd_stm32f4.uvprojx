@@ -447,9 +447,9 @@
               <FilePath>../Src/fatfs.c</FilePath>
             </File>
             <File>
-              <FileName>fatfs_sd.c</FileName>
+              <FileName>fastfs_sd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Downloads\STM32_SPI_SDCARD-master (1)\STM32_SPI_SDCARD-master\Src\fatfs_sd.c</FilePath>
+              <FilePath>..\Src\fastfs_sd.c</FilePath>
             </File>
           </Files>
         </Group>
